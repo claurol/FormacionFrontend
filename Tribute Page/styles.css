@@ -1,31 +1,64 @@
+/*IMPORTAR FUENTE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/*AJUSTES GENERALES*/
+
 *{
     box-sizing:border-box;
+    font-family: Montserrat, monospace;
 }
 
 body{
   background-color:black;
+  margin:0;
+  }
+
+/*ZONA TITULO*/
+
+  #title-div{
+    width:80%;
+    position:absolute;
+    top: 0;
+    left:10%;
   }
 
   #title{
     text-align:center;
-    font-family: monospace;
     color:#eee;
-    line-height:1.7em;
+    line-height:1.2em;
+    font-size:2.5rem;
   }
+
+  #sub-title{
+    text-align:center;
+    color:#eee;
+    line-height:1.2em;
+    font-size:1.5rem;
+  }
+
+/*CONTENEDOR PRINCIPAL*/
+
+  #container{
+    display:flex;
+    flex-direction: column;
+  }
+
+/*ZONA IMAGEN Y PIE DE FOTO*/
 
   #img-div{
     display: flex;
     flex-direction:column;
     justify-content:center;
-    width:80%;
-    max-width:500px;
-    margin:0 auto;
+    width:100%;
+    margin:0;
   }
   
   #image {
+    display:block;
     max-width: 100%;
     height: auto;
-    margin:0 auto;
+    object-fit: cover;
   }
 
   #img-caption{
@@ -34,8 +67,16 @@ body{
 
   #img-caption-text
   {
-    font-family:monospace;
-    font-size: 16px;
+    font-size: 1.2rem;
+    line-height: 1.7em;
+    text-align:center;
+    color:#eee;
+  }
+
+/*ZONA LISTA BIOGRAFICA*/
+
+  #tribute-bio{
+    font-size: 1.5rem;
     line-height: 1.7em;
     text-align:center;
     color:#eee;
@@ -43,20 +84,79 @@ body{
 
   #tribute-info-div
   {
-    width:80%;
-    max-width:500px;
+    width:90%;
+    max-width:800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color:#eee;
-    border-radius:20px;
   }
 
   #tribute-info
   {
-    font-family:monospace;
-    font-size: 18px;
-    line-height: 1.7em;
-    text-align:left;
-    color:black;
+    color: rgba(254,55,4,255);
     margin:0;
+    font-size: 1.2rem;
+  }
+
+  #tribute-info span
+  {
+    font-size: 1.2rem;
+    line-height: 2em;
+    text-align:left;
+    color: #eee;
+    margin:0;
+  }
+
+/*ENLACE FINAL*/
+
+  #tribute-link-p
+  {
+    font-size: 1.2rem;
+    text-align:center;
+    color: #eee;
+    margin:0 0 20px 0;
+  }
+
+  #tribute-link{
+    color: rgba(254,55,4,255);
+  }
+
+/*SEPARADORES*/
+
+  hr{
+    width:90%;
+    max-width:800px;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+/*MEDIA QUERIES*/
+
+  @media (max-width:776px) 
+  {
+    #title{
+      font-size:1.8rem;
+    }
+
+    #sub-title{
+      font-size:1.2rem;
+    }
+
+    #img-caption-text
+    {
+      font-size: 1rem;
+    }
+
+    #tribute-bio{
+      font-size:1.2rem;
+    }
+
+    #tribute-info span
+    {
+      font-size: 1rem;
+    }
+
+    #tribute-link-p
+    {
+      font-size: 1rem;
+    }
+
   }
