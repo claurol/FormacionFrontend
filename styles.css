@@ -1,0 +1,67 @@
+*{
+  font-family: Arial;
+  line-height:1.7em;
+  font-size:16px;
+}
+
+body
+{
+  background-color:orange;
+}
+
+#container
+{
+  width:80%;
+  max-width:600px;
+  background-color:rgba(255, 255, 255, 0.35);
+  padding:20px;
+  margin: 0 auto;
+}
+
+#title
+{
+  text-align:center;
+  font-size:32px;
+}
+
+#description
+{
+  text-align:center;
+  position:relative;
+  bottom:12px;
+  line-height:0;
+}
+
+#name, #email, #number, #dropdown{
+  width:100%;
+}
+
+textarea{
+  width:100%;
+}
+
+#submit
+{
+  width:100%;
+background-color:orange;
+font-weight:bold;
+border: 1px solid black;
+}
+
+#name:focus, #name:hover,#email:focus, 
+#email:hover,
+#number:focus,
+#number:hover, #dropdown:focus,
+#dropdown:hover,
+#mayorsi:focus,
+#mayorsi:hover,
+#mayorno:focus,
+#mayorno:hover,
+input[type="checkbox"]:hover,
+textarea:focus,
+textarea:hover,
+#submit:focus,
+#submit:hover
+{
+  box-shadow: 0px 0px 12px 1px white;
+}
