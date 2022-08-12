@@ -1,5 +1,9 @@
+/*IMPORTAR FUENTE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
-  font-family: Arial;
+  font-family: Montserrat, monospace;
   line-height:1.7em;
   font-size:16px;
 }
@@ -32,8 +36,16 @@ body
   line-height:0;
 }
 
-#name, #email, #number, #dropdown{
+#dropdown
+{
   width:100%;
+  text-align:left;
+  height: 32px;
+}
+
+#name, #email, #number{
+  width:100%;
+  height:32px;
 }
 
 textarea{
