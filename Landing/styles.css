@@ -1,0 +1,308 @@
+/*IMPORTAR FUENTE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+/*AJUSTES GENERALES*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, Arial, monospace;
+}
+
+body{
+    background-color:#eee;
+}
+
+/*CABECERA*/
+
+#header{
+    position: fixed;
+    top: 0;
+    width:100%;
+    min-height: 80px;
+    padding: 0px 60px 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+  }
+
+  #header-img{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #header-img i{
+    color:#FFB62E;
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+
+  #header-img p{
+    font-size: 1.5rem;
+  }
+  
+  #nav-bar{
+    display:block;
+  }
+  
+  #nav-bar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0px;
+  }
+  
+  #nav-bar ul li{
+    list-style:none;
+    padding:18px 60px 18px 60px;
+  }
+  
+  #nav-bar ul li a{
+    color:black;
+    text-decoration: none;
+  }
+
+  #nav-bar ul li a:hover{
+    text-decoration: underline;
+  }
+
+/*FORMULARIO*/
+
+  #section{
+    margin: 100px auto 0px;
+    width:100%;
+    max-width: 800px;
+  }
+
+  #section h2{
+    text-align:center;
+    line-height: 1.7em;
+  }
+
+  #form{
+    display:flex;
+    flex-direction: column;
+    width:35%;
+    min-width:180px;
+    margin:0 auto;
+  }
+
+  #email{
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+  }
+
+  #submit{
+    margin: 10px auto 10px;
+    background-color:#FFB62E;
+    width:fit-content;
+    padding: 10px 15px 10px 15px;
+    transition: background-color 0.3s;
+  }
+
+  #submit:hover{
+    background-color:#FFA500;
+  }
+
+/*CARACTERÍSTICAS*/
+
+  #features{
+    width:100%;
+    max-width: 800px;
+    margin: 50px auto 50px;
+  }
+
+  .grid{
+    display:flex;
+    flex-direction: row;
+    height:128px;
+    align-items: center;
+  }
+
+  .features-logo{
+    display:flex;
+    width:20%;
+    justify-content: center;
+  }
+
+  .features-logo i{
+    text-align: right;
+    font-size:48px;
+    color:#FFB62E;
+  }
+
+  .features-text{
+    width:80%;
+  }
+
+  /*VIDEO*/
+
+  #section-video{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin: 0 auto;
+  }
+
+  #video{
+    width:100%;
+    max-width: 800px;
+    height: 450px;
+  }
+
+  /*PRECIOS*/
+
+  #pricing{
+    width:100%;
+    max-width: 800px;
+    display:flex;
+    justify-content: center;
+    margin:50px auto 50px;
+  }
+
+  .pricing-column{
+    width:calc(100% / 3);
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pricing-column div{
+    background-color: #ddd;
+    padding: 15px;
+  }
+
+  .pricing-column div h2{
+    text-align:center;
+    font-size: 1.2rem;
+  }
+
+  .price{
+    font-size: 2rem;
+    text-align: center;
+    padding:20px;
+  }
+
+  .pricing-column ol{
+    padding-left: 0px;
+    list-style: none;
+    text-align:center;
+  }
+
+  .pricing-column ol li{
+    padding: 10px;
+  }
+
+  .btn{
+    background-color: #FFB62E;
+    margin: 30px auto 15px;
+    padding: 10px 15px 10px 15px;
+  }
+
+  .btn{
+    background-color: #FFB62E;
+    margin: 30px auto 15px;
+    padding: 10px 15px 10px 15px;
+    transition: background-color 0.3s;
+  }
+
+  .btn:hover{
+    background-color: #FFA500;
+  }
+
+  /*FOOTER*/
+
+  #footer{
+    background-color:#ddd;
+  }
+
+  #footer ul{
+    display:flex;
+    justify-content:center;
+    list-style: none;
+    padding:0;
+  }
+
+  #footer ul li{
+    padding:15px;
+    color:black;
+  }
+
+  #footer ul li a{
+    color:black;
+    text-decoration: none;
+  }
+
+  #footer p{
+    text-align: center;
+    padding:15px;
+  }
+
+/*MEDIA QUERIES*/
+
+@media (max-width:776px) 
+{
+
+  /*CABECERA*/
+
+    #header {
+        flex-direction:column;
+        padding: 5px;
+    }
+
+    #header-img{
+        width:100%;
+        flex-direction: column;
+        min-width: max-content;
+    }
+
+    #header-img i{
+      margin-right: 0rem;
+    }
+
+    #nav-bar{
+        display:block;
+        width:100%;
+    }
+
+    #nav-bar ul{
+        flex-direction: column;
+    }
+
+      #nav-bar ul li{
+        padding:3px;
+    }
+
+    /*FORMULARIO*/
+
+    #section{
+    margin: 225px auto 0px;
+    }
+
+    #form{
+      width:50%;
+      min-width:180px;
+    }
+
+    /*PRECIOS*/
+
+    #pricing{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pricing-column{
+      width:90%;
+    }
+
+}
